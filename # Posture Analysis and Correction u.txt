@@ -1,0 +1,71 @@
+# Posture Analysis and Correction using Mediapipe
+
+## Overview
+This project is a **real-time posture analysis system** using **OpenCV, Mediapipe, and Tkinter**. It detects posture defects based on **pose landmarks**, analyzes the user's stance, and provides corrective exercises. It also includes a **thumbs-up gesture detection** feature for image capture and analysis.
+
+## Features
+- **Real-time posture detection** using Mediapipe's Pose module.
+- **Posture classification** into categories like *Slouching, Uneven Shoulders, Forward Head, Kyphosis, and Swayback*.
+- **Hand gesture detection** (Thumbs-Up) to trigger image capture.
+- **Multi-angle image analysis** (Front, Side, and Back views).
+- **Tkinter GUI** displaying detected posture defects and corresponding fixes.
+- **Automatic logging** of posture issues and recommended corrective exercises.
+
+## Technologies Used
+- **Python 3.x**
+- **OpenCV** (Computer Vision)
+- **Mediapipe** (Pose & Hand Tracking)
+- **NumPy** (Numerical Computation)
+- **Tkinter** (GUI for Posture Fixes Display)
+
+## Installation
+### Prerequisites
+Ensure you have **Python 3.x** installed on your system. Then, install the required dependencies:
+
+```bash
+pip install opencv-python mediapipe numpy tkinter
+```
+
+## Usage
+### Running the Posture Analysis
+Run the script using:
+```bash
+python posture_analysis.py
+```
+### Workflow
+1. **Turn to the specified angle** (*Front, Side, or Back*), and the system will guide you.
+2. **Show a thumbs-up gesture** to trigger image capture.
+3. The system will analyze your posture and **log detected defects**.
+4. A **Tkinter window** will pop up with corrective exercises.
+5. **Press 'q'** to exit the program at any time.
+
+## Posture Defects and Fixes
+The system detects and suggests exercises for:
+- **Slouching:** Strengthen core, thoracic extension exercises.
+- **Forward Head Posture:** Chin tucks, neck stretches.
+- **Uneven Shoulders:** Scapular retraction, dumbbell shrugs.
+- **Rounded Shoulders:** Reverse flys, chest stretches.
+- **Kyphosis (Hunchback):** Cobra stretch, superman exercise.
+- **Swayback:** Glute bridges, pelvic tilts.
+- **Leaning Forward/Backward:** Core strengthening, balance exercises.
+
+## Example Output
+```
+Posture Issues Detected:
+- Severe Slouching
+- Uneven Shoulders
+- Possible Forward Head
+Recommended Fixes:
+1. Chin Tucks
+2. Shoulder Retraction Exercises
+3. Wall Posture Check
+```
+
+## Future Improvements
+- Add **Real-time Voice Feedback** for posture correction.
+- Improve **Posture Detection Accuracy** with more ML-based evaluation.
+- Develop a **Web App Version** using Flask or Streamlit.
+
+## License
+This project is licensed under the **MIT License**. Feel free to use and modify it!
+
